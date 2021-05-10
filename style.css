@@ -1,0 +1,121 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.head,
+.left_arm,
+.right_arm,
+.torso,
+.left_leg,
+.right_leg
+{
+	background-color: #5DC946;
+}
+
+/* -------------------- */
+.head{
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	/* Equivalente a las dos arriba:
+	margin: 0 auto 10px auto; */
+	border-radius: 200px 200px 0 0;
+}
+
+.head:hover{
+	/* Especificamos las propiedades
+	que debe cumplir el div tras poner
+	el cursor encima */
+	width: 300px;
+	transition: 1s ease-in-out;
+}
+
+
+/* -------------------- */
+.eyes{
+	height: 150px;
+	width: 200px;
+
+	/* Flex options for the arm items */
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.left_eye, .right_eye{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color: pink;
+	margin-bottom: 10px;
+}
+
+
+/* -------------------- */
+.upper_body{
+	width: 300px;
+	height: 150px;
+	margin: 0 auto;
+	/* Flex options for the arm items */
+	display: flex;
+	justify-content: space-between;
+
+	/* Cuestiones didácticas */
+	background-color: pink;
+}
+
+.left_arm, .right_arm{
+	width: 40px;
+	height: 125px;
+	border-radius: 100px;
+}
+
+.right_arm:hover{
+	transform-origin: left top;
+	transform: rotate(-70deg);
+	transition: 1s ease-in-out;
+}
+
+.torso{
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px;
+	margin-bottom: 10px;
+}
+
+/* -------------------- */
+.lower_body{
+	height: 120px;
+	width: 200px;
+	margin: 0 auto;
+	/* Flex options for the leg items */
+	display: flex;
+	justify-content: space-between;
+
+	/* Cuestiones didácticas */
+	background-color: pink;
+}
+
+.left_leg, .right_leg{
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+}
+
+.left_leg{
+	margin-left: 45px; 
+}
+
+.left_leg:hover{
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+
+.right_leg{
+	margin-right: 45px;
+}
